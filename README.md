@@ -12,7 +12,7 @@ Long-read sequencing technologies such as Oxford Nanopore sequencing help reduce
 
 At the same time, long-read sequencing also has its own limitations. Oxford Nanopore reads generally show higher per-read error rates compared to short reads, with insertion and deletion errors being commonly observed in homopolymer regions. These errors can affect base level accuracy in the final assembly if they are not taken into account during analysis [4].
 
-Recent improvements in Oxford Nanopore sequencing chemistry, including the R10 pore design have improved read accuracy, with reported Q20+ performance for bacterial genomes [8]. This has made long-read-based genome assembly more practical for bacterial genomes. Even so, long-read assemblies may still contain residual errors. Hence, different genome assembly approaches involve considerations of contiguity, completeness and correctness. The assembly quality cannot be assessed using contiguity metrics alone [5].
+Recent improvements in Oxford Nanopore sequencing, particularly advances in neural network basecalling models, have improved read accuracy for bacterial genomes [8]. This has made long-read-based genome assembly more practical for bacterial genomes. Even so, long-read assemblies may still contain residual errors. Hence, different genome assembly approaches involve considerations of contiguity, completeness and correctness. The assembly quality cannot be assessed using contiguity metrics alone [5].
 
 ## Proposed Methods
 
@@ -31,5 +31,5 @@ After the assembly is generated, the assembled genome will be compared with a re
 [5] Thrash A, Hoffmann F, Perkins A. *Toward a more holistic method of genome assembly assessment*. BMC Bioinformatics, 2020.\
 [6] Li H. *Minimap2: pairwise alignment for nucleotide sequences*. Bioinformatics, 2018.\
 [7] Thorvaldsdóttir H, Robinson JT, Mesirov JP. *Integrative Genomics Viewer (IGV): high-performance genomics data visualization*. Bioinformatics, 2013.\
-[8] Wick RR, Judd LM, Holt KE. Performance of neural network basecalling tools for Oxford Nanopore sequencing. Genome Biology, 2019.
+[8] Wick RR, Judd LM, Holt KE. Performance of neural network basecalling tools for Oxford Nanopore sequencing. Genome Biology, 2019.                  
 [9] Zheng Z, Li S, Su J, et al. Symphonizing pileup and full-alignment for deep learning–based long-read variant calling. Nature Computational Science, 2022.
