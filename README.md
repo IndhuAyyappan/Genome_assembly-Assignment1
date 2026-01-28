@@ -20,7 +20,7 @@ Oxford Nanopore R10 sequencing reads in FASTQ format will be used for this genom
 
 Genome assembly will be done using Flye. Flye is a long-read assembler that is commonly used for bacterial genomes. It is suitable for this dataset because it is able to deal with repetitive regions and structural complexity, which are often present in bacterial genomes. Since the reads are long and error prone, a repeat graph–based assembler such as Flye is an appropriate choice [2].
 
-After the assembly is generated, the assembled genome will be compared with a reference *Salmonella enterica* genome obtained from NCBI. The comparison will be done by aligning the assembly to the reference using minimap2. The alignment output will then be sorted and indexed using samtools so that it can be examined further. Visual inspection of the alignment will be carried out using IGV to look for structural variation and possible assembly related issues [7].
+After the assembly is generated, the assembled genome will be compared with a reference *Salmonella enterica* genome obtained from NCBI. The comparison will be done by aligning the assembly to the reference using minimap2. The alignment output will then be sorted and indexed using samtools so that it can be examined further. Visual inspection of the alignment will be carried out using IGV to look for structural variation and possible assembly related issues [7].Following alignment to the reference genome, variant calling will be performed to identify sequence level differences between the assembled genome and the reference. Single nucleotide variants and small insertions and deletions will be identified using Clair3, a variant caller designed for long-read sequencing data, including Oxford Nanopore reads [9]. The identified variants will be used to assess base level accuracy and to further characterize differences between the assembled genome and the reference strain.
 
 ## References
 
@@ -31,4 +31,5 @@ After the assembly is generated, the assembled genome will be compared with a re
 [5] Thrash A, Hoffmann F, Perkins A. *Toward a more holistic method of genome assembly assessment*. BMC Bioinformatics, 2020.\
 [6] Li H. *Minimap2: pairwise alignment for nucleotide sequences*. Bioinformatics, 2018.\
 [7] Thorvaldsdóttir H, Robinson JT, Mesirov JP. *Integrative Genomics Viewer (IGV): high-performance genomics data visualization*. Bioinformatics, 2013.\
-[8] Oxford Nanopore Technologies. *Improved bacterial genome assembly accuracy using R10 nanopore sequencing chemistry*. Nature Biotechnology, 2025.
+[8] Wick RR, Judd LM, Holt KE. Performance of neural network basecalling tools for Oxford Nanopore sequencing. Genome Biology, 2019.
+[9] Zheng Z, Li S, Su J, et al. Symphonizing pileup and full-alignment for deep learning–based long-read variant calling. Nature Computational Science, 2022.
