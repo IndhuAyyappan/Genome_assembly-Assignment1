@@ -1,0 +1,25 @@
+contig_1
+Extensive misassembly (relocation, inconsistency = 42723) between 97666 34 and 186100 97667
+Extensive misassembly (relocation, inconsistency = 1083051) between 186100 97667 and 186101 186809
+Extensive misassembly (relocation, inconsistency = 1171482) between 186101 186809 and 545702 186810
+Extensive misassembly (relocation, inconsistency = 1171482) between 545702 186810 and 545703 546411
+Extensive misassembly (relocation, inconsistency = 1530530) between 545703 546411 and 692639 546412
+Extensive misassembly (relocation, inconsistency = -18409) between 692639 546412 and 1079571 711031
+Extensive misassembly (relocation, inconsistency = 1003164) between 1298086 1079572 and 1298087 1298795
+Extensive misassembly (relocation, inconsistency = 930819) between 1298087 1298795 and 1371144 1298796
+Extensive misassembly (relocation, inconsistency = -80741) between 1371144 1298796 and 1458474 1451831
+contig_3
+Extensive misassembly (relocation, inconsistency = -31976) between 638098 1 and 854185 669977
+Extensive misassembly (relocation, inconsistency = -12489) between 1131670 947644 and 1182108 1159875
+Extensive misassembly (relocation, inconsistency = 33693) between 1182108 1159875 and 1254242 1182109
+contig_4
+Extensive misassembly (relocation, inconsistency = -518957) between 14583 14144 and 16152 15369
+Extensive misassembly (relocation, inconsistency = 769158) between 16152 15369 and 965495 18446
+contig_5
+Extensive misassembly (relocation, inconsistency = -271544) between 4512 5730 and 18691 272773
+Extensive misassembly (relocation, inconsistency = 7986) between 18691 272773 and 272774 281195
+contig_6
+Extensive misassembly (relocation, inconsistency = 1146498) between 1 138545 and 138546 139254
+Extensive misassembly (relocation, inconsistency = -1147209) between 138546 139254 and 139255 208196
+Extensive misassembly (relocation, inconsistency = -511878) between 139255 208196 and 208197 208905
+Extensive misassembly (relocation, inconsistency = 511167) between 208197 208905 and 208906 230625

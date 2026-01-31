@@ -12,3 +12,7 @@ results/flye/20-repeat/
 results/flye/30-contigger/
 results/flye/40-polishing/
 assembly_graph.*
+results/quast/**/icarus_viewers/
+results/quast/**/aligned_stats/
+results/quast/**/*.tex
+results/quast/**/*.pdf
