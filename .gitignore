@@ -16,3 +16,7 @@ results/quast/**/icarus_viewers/
 results/quast/**/aligned_stats/
 results/quast/**/*.tex
 results/quast/**/*.pdf
+# Large alignment files (could not upload to GitHub)
+results/alignment/*.sam
+results/alignment/*.bam
+results/alignment/*.bai
