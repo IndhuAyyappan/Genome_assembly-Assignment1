@@ -20,3 +20,14 @@ results/quast/**/*.pdf
 results/alignment/*.sam
 results/alignment/*.bam
 results/alignment/*.bai
+# Clair3 outputs
+results/variant_calling/**/tmp/
+results/variant_calling/**/log/
+results/variant_calling/**/*.vcf.gz
+results/variant_calling/**/*.tbi
+
+# small summaries created from the vc files generated
+!results/variant_calling/**/run_clair3.log
+!results/variant_calling/**/variant_total.txt
+!results/variant_calling/**/variant_counts.txt
+!results/variant_calling/**/variants_head10.tsv
