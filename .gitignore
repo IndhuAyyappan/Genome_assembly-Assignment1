@@ -4,30 +4,10 @@
 .Ruserdata
 data/raw/
 .DS_Store
+#Raw reads and reference
 data/raw/
 data/reference/
-results/flye/00-assembly/
-results/flye/10-consensus/
-results/flye/20-repeat/
-results/flye/30-contigger/
-results/flye/40-polishing/
-assembly_graph.*
-results/quast/**/icarus_viewers/
-results/quast/**/aligned_stats/
-results/quast/**/*.tex
-results/quast/**/*.pdf
 # Large alignment files (could not upload to GitHub)
 results/alignment/*.sam
 results/alignment/*.bam
 results/alignment/*.bai
-# Clair3 outputs
-results/variant_calling/**/tmp/
-results/variant_calling/**/log/
-results/variant_calling/**/*.vcf.gz
-results/variant_calling/**/*.tbi
-
-# small summaries created from the vc files generated
-!results/variant_calling/**/run_clair3.log
-!results/variant_calling/**/variant_total.txt
-!results/variant_calling/**/variant_counts.txt
-!results/variant_calling/**/variants_head10.tsv
