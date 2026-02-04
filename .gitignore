@@ -16,3 +16,6 @@ results/alignment/*.bai
 !results/alignment/flye_hq_to_ref.bam
 !results/alignment/flye_hq_to_ref.sorted.bam
 !results/alignment/flye_hq_to_ref.sorted.bam.bai
+
+
+!results/alignment/vc_raw_to_flye_hq.sorted.bam.bai

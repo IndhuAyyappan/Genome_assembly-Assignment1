@@ -1,0 +1,55 @@
+This is WhatsHap 1.7 running under Python 3.9.0
+Working on 1 sample from 1 family
+
+# Resource usage
+Maximum memory usage: 0.049 GB
+Time spent reading BAM/CRAM:                    0.0 s
+Time spent parsing VCF:                         0.0 s
+Time spent selecting reads:                     0.0 s
+Time spent phasing:                             0.0 s
+Time spent writing VCF:                         0.0 s
+Time spent finding components:                  0.0 s
+Time spent on rest:                             0.0 s
+Total elapsed time:                             0.0 s
+This is WhatsHap 1.7 running under Python 3.9.0
+Working on 1 sample from 1 family
+
+# Working on contig contig_2 in individual SAMPLE
+Found 1 usable heterozygous variants (0 skipped due to missing genotypes)
+Found 3 reads covering 1 variants
+Kept 0 reads that cover at least two variants each
+Selected 0 most phase-informative reads covering 0 variants
+Phasing 1 sample by solving the MEC problem ...
+No. of phased blocks: 0
+
+# Resource usage
+Maximum memory usage: 0.055 GB
+Time spent reading BAM/CRAM:                    1.1 s
+Time spent parsing VCF:                         0.0 s
+Time spent selecting reads:                     0.0 s
+Time spent phasing:                             0.0 s
+Time spent writing VCF:                         0.0 s
+Time spent finding components:                  0.0 s
+Time spent on rest:                             0.0 s
+Total elapsed time:                             1.1 s
+This is WhatsHap 1.7 running under Python 3.9.0
+Working on 1 sample from 1 family
+
+# Working on contig contig_1 in individual SAMPLE
+Found 13 usable heterozygous variants (0 skipped due to missing genotypes)
+Found 6 reads covering 13 variants
+Kept 3 reads that cover at least two variants each
+Selected 3 most phase-informative reads covering 12 variants
+Phasing 1 sample by solving the MEC problem ...
+Largest block contains 12 variants (100.0% of accessible variants) between position 3317990 and 3318536
+
+# Resource usage
+Maximum memory usage: 0.058 GB
+Time spent reading BAM/CRAM:                    2.0 s
+Time spent parsing VCF:                         0.0 s
+Time spent selecting reads:                     0.0 s
+Time spent phasing:                             0.0 s
+Time spent writing VCF:                         0.0 s
+Time spent finding components:                  0.0 s
+Time spent on rest:                             0.1 s
+Total elapsed time:                             2.1 s

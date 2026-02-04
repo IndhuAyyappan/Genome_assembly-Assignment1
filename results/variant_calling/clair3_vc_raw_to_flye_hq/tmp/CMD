@@ -1,0 +1,1 @@
+/opt/bin/run_clair3.sh --bam_fn=/data/results/alignment/vc_raw_to_flye_hq.sorted.bam --ref_fn=/data/results/flye_hq/assembly.fasta --threads=6 --platform=ont --model_path=/opt/models/r1041_e82_400bps_sup_v500 --include_all_ctgs --output=/data/results/variant_calling/clair3_vc_raw_to_flye_hq

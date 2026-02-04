@@ -1,0 +1,33 @@
+##fileformat=VCFv4.2
+##source=Clair3
+##clair3_version=1.1.2
+##cmdline=/opt/bin/run_clair3.sh --bam_fn=/data/results/alignment/vc_raw_to_flye_hq.sorted.bam --ref_fn=/data/results/flye_hq/assembly.fasta --threads=6 --platform=ont --model_path=/opt/models/r1041_e82_400bps_sup_v500 --include_all_ctgs --output=/data/results/variant_calling/clair3_vc_raw_to_flye_hq
+##reference=/data/results/flye_hq/assembly.fasta
+##FILTER=<ID=PASS,Description="All filters passed">
+##FILTER=<ID=LowQual,Description="Low quality variant">
+##FILTER=<ID=RefCall,Description="Reference call">
+##INFO=<ID=P,Number=0,Type=Flag,Description="Result from pileup calling">
+##INFO=<ID=F,Number=0,Type=Flag,Description="Result from full-alignment calling">
+##FORMAT=<ID=GT,Number=1,Type=String,Description="Genotype">
+##FORMAT=<ID=GQ,Number=1,Type=Integer,Description="Genotype Quality">
+##FORMAT=<ID=DP,Number=1,Type=Integer,Description="Approximate read depth (reads 1. with MQ below 5 or an user-specified threshold, or 2. selected by 'samtools view -F 2316', are filtered)">
+##FORMAT=<ID=AD,Number=R,Type=Integer,Description="Allelic depths for the ref and alt alleles in the order listed">
+##FORMAT=<ID=PL,Number=G,Type=Integer,Description="Normalized, Phred-scaled likelihoods for genotypes as defined in the VCF specification">
+##FORMAT=<ID=AF,Number=A,Type=Float,Description="Observed allele frequency in reads, for each ALT allele, in the same order as listed, or the REF allele for a RefCall">
+##contig=<ID=contig_1,length=3318776>
+##contig=<ID=contig_2,length=1676977>
+##contig=<ID=contig_4,length=109059>
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO	FORMAT	SAMPLE
+contig_1	113	.	G	A	13.78	PASS	P	GT:GQ:DP:AD:AF	0/1:13:4:1,3:0.7500
+contig_1	3317990	.	G	A	14.39	PASS	P	GT:GQ:DP:AD:AF	0/1:14:5:2,3:0.6000
+contig_1	3318102	.	G	C	13.66	PASS	P	GT:GQ:DP:AD:AF	0/1:13:4:1,3:0.7500
+contig_1	3318105	.	G	A	13.17	PASS	P	GT:GQ:DP:AD:AF	0/1:13:4:1,3:0.7500
+contig_1	3318128	.	G	A	15.44	PASS	P	GT:GQ:DP:AD:AF	0/1:15:4:1,3:0.7500
+contig_1	3318182	.	G	C	15.59	PASS	P	GT:GQ:DP:AD:AF	0/1:15:4:1,3:0.7500
+contig_1	3318237	.	C	T	7.86	PASS	P	GT:GQ:DP:AD:AF	0/1:7:4:3,1:0.2500
+contig_1	3318247	.	G	C	11.36	PASS	P	GT:GQ:DP:AD:AF	0/1:11:4:1,3:0.7500
+contig_1	3318255	.	C	T	14.87	PASS	P	GT:GQ:DP:AD:AF	0/1:14:4:1,3:0.7500
+contig_1	3318287	.	G	A	6.39	PASS	P	GT:GQ:DP:AD:AF	0/1:6:4:3,1:0.2500
+contig_1	3318459	.	G	A	15.04	PASS	P	GT:GQ:DP:AD:AF	0/1:15:3:1,2:0.6667
+contig_1	3318533	.	G	A	11.78	PASS	P	GT:GQ:DP:AD:AF	0/1:11:3:1,2:0.6667
+contig_1	3318536	.	G	A	11.82	PASS	P	GT:GQ:DP:AD:AF	0/1:11:3:1,2:0.6667
