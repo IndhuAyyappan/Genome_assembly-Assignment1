@@ -11,3 +11,8 @@ data/reference/
 results/alignment/*.sam
 results/alignment/*.bam
 results/alignment/*.bai
+# but allow the small Flye HQ assembly-to-ref alignment files
+!results/alignment/flye_hq_to_ref.sam
+!results/alignment/flye_hq_to_ref.bam
+!results/alignment/flye_hq_to_ref.sorted.bam
+!results/alignment/flye_hq_to_ref.sorted.bam.bai
