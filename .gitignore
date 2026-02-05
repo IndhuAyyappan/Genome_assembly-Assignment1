@@ -19,3 +19,10 @@ results/alignment/*.bai
 
 
 !results/alignment/vc_raw_to_flye_hq.sorted.bam.bai
+# Large BAM files (>100MB)
+results/**/calls_to_draft.bam
+results/**/vc_raw_to_flye_hq.bam
+results/**/flye_hq_to_ref.bam
+
+# Large medaka probability file
+results/**/consensus_probs.hdf
