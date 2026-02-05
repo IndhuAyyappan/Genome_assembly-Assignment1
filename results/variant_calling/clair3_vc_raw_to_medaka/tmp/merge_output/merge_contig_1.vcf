@@ -1,0 +1,26 @@
+##fileformat=VCFv4.2
+##source=Clair3
+##clair3_version=1.1.2
+##cmdline=/opt/bin/run_clair3.sh --bam_fn /data/results/alignment/vc_raw_to_medaka.sorted.bam --ref_fn /data/results/polishing/medaka_flye_hq/consensus.fasta --threads 16 --platform ont --model_path /opt/models/ont_guppy5 --include_all_ctgs --output /data/results/variant_calling/clair3_vc_raw_to_medaka
+##reference=/data/results/polishing/medaka_flye_hq/consensus.fasta
+##FILTER=<ID=PASS,Description="All filters passed">
+##FILTER=<ID=LowQual,Description="Low quality variant">
+##FILTER=<ID=RefCall,Description="Reference call">
+##INFO=<ID=P,Number=0,Type=Flag,Description="Result from pileup calling">
+##INFO=<ID=F,Number=0,Type=Flag,Description="Result from full-alignment calling">
+##FORMAT=<ID=GT,Number=1,Type=String,Description="Genotype">
+##FORMAT=<ID=GQ,Number=1,Type=Integer,Description="Genotype Quality">
+##FORMAT=<ID=DP,Number=1,Type=Integer,Description="Approximate read depth (reads 1. with MQ below 5 or an user-specified threshold, or 2. selected by 'samtools view -F 2316', are filtered)">
+##FORMAT=<ID=AD,Number=R,Type=Integer,Description="Allelic depths for the ref and alt alleles in the order listed">
+##FORMAT=<ID=PL,Number=G,Type=Integer,Description="Normalized, Phred-scaled likelihoods for genotypes as defined in the VCF specification">
+##FORMAT=<ID=AF,Number=A,Type=Float,Description="Observed allele frequency in reads, for each ALT allele, in the same order as listed, or the REF allele for a RefCall">
+##contig=<ID=contig_2,length=1676978>
+##contig=<ID=contig_1,length=3318770>
+##contig=<ID=contig_4,length=109060>
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO	FORMAT	SAMPLE
+contig_1	181	.	T	A	8.29	PASS	P	GT:GQ:DP:AD:AF	0/1:8:4:2,2:0.5000
+contig_1	1448451	.	C	G	13.10	PASS	F	GT:GQ:DP:AD:AF	0/1:13:147:119,21:0.1429
+contig_1	2933632	.	C	G	14.87	PASS	F	GT:GQ:DP:AD:AF	0/1:14:119:85,28:0.2353
+contig_1	3318477	.	C	T	5.05	PASS	F	GT:GQ:DP:AD:AF	0/1:5:6:5,1:0.1667
+contig_1	3318583	.	G	A	6.87	PASS	P	GT:GQ:DP:AD:AF	0/1:6:4:3,1:0.2500
+contig_1	3318607	.	G	A	9.74	PASS	P	GT:GQ:DP:AD:AF	0/1:9:3:2,1:0.3333

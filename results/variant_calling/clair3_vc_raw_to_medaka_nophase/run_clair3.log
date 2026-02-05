@@ -1,0 +1,122 @@
+[INFO] CLAIR3 VERSION: v1.1.2
+[INFO] BAM FILE PATH: /data/results/alignment/vc_raw_to_medaka.sorted.bam
+[INFO] REFERENCE FILE PATH: /data/results/polishing/medaka_flye_hq/consensus.fasta
+[INFO] MODEL PATH: /opt/models/ont
+[INFO] OUTPUT FOLDER: /data/results/variant_calling/clair3_vc_raw_to_medaka_nophase
+[INFO] PLATFORM: ont
+[INFO] THREADS: 16
+[INFO] BED FILE PATH: EMPTY
+[INFO] VCF FILE PATH: EMPTY
+[INFO] CONTIGS: EMPTY
+[INFO] CONDA PREFIX: 
+[INFO] SAMTOOLS PATH: samtools
+[INFO] PYTHON PATH: python3
+[INFO] PYPY PATH: pypy3
+[INFO] PARALLEL PATH: parallel
+[INFO] WHATSHAP PATH: whatshap
+[INFO] LONGPHASE PATH: EMPTY
+[INFO] CHUNK SIZE: 5000000
+[INFO] FULL ALIGN PROPORTION: 0.7
+[INFO] FULL ALIGN REFERENCE PROPORTION: 0.1
+[INFO] PHASING PROPORTION: 0.7
+[INFO] MINIMUM MQ: 5
+[INFO] MINIMUM COVERAGE: 2
+[INFO] SNP AF THRESHOLD: 0.08
+[INFO] INDEL AF THRESHOLD: 0.15
+[INFO] BASE ERROR IN GVCF: 0.001
+[INFO] GQ BIN SIZE IN GVCF: 5
+[INFO] ENABLE FILEUP ONLY CALLING: False
+[INFO] ENABLE FAST MODE CALLING: False
+[INFO] ENABLE CALLING SNP CANDIDATES ONLY: False
+[INFO] ENABLE PRINTING REFERENCE CALLS: False
+[INFO] ENABLE OUTPUT GVCF: False
+[INFO] ENABLE HAPLOID PRECISE MODE: False
+[INFO] ENABLE HAPLOID SENSITIVE MODE: False
+[INFO] ENABLE INCLUDE ALL CTGS CALLING: True
+[INFO] ENABLE NO PHASING FOR FULL ALIGNMENT: True
+[INFO] ENABLE REMOVING INTERMEDIATE FILES: False
+[INFO] ENABLE LONGPHASE FOR INTERMEDIATE VCF PHASING: False
+[INFO] ENABLE PHASING FINAL VCF OUTPUT USING WHATSHAP: False
+[INFO] ENABLE PHASING FINAL VCF OUTPUT USING LONGPHASE: False
+[INFO] ENABLE HAPLOTAGGING FINAL BAM: False
+[INFO] ENABLE LONG INDEL CALLING: False
+[INFO] ENABLE C_IMPLEMENT: True
+
+[33m[WARNING] Threads setting exceeds maximum available threads 6, set threads=6[0m
++ /opt/bin/scripts/clair3_c_impl.sh --bam_fn /data/results/alignment/vc_raw_to_medaka.sorted.bam --ref_fn /data/results/polishing/medaka_flye_hq/consensus.fasta --threads 6 --model_path /opt/models/ont --platform ont --output /data/results/variant_calling/clair3_vc_raw_to_medaka_nophase --bed_fn=EMPTY --vcf_fn=EMPTY --ctg_name=EMPTY --sample_name=SAMPLE --chunk_num=0 --chunk_size=5000000 --samtools=samtools --python=python3 --pypy=pypy3 --parallel=parallel --whatshap=whatshap --qual=2 --var_pct_full=0.7 --ref_pct_full=0.1 --var_pct_phasing=0.7 --snp_min_af=0.08 --indel_min_af=0.15 --min_mq=5 --min_coverage=2 --min_contig_size=0 --pileup_only=False --gvcf=False --base_err=0.001 --gq_bin_size=5 --fast_mode=False --call_snp_only=False --enable_variant_calling_at_sequence_head_and_tail=False --output_all_contigs_in_gvcf_header=False --print_ref_calls=False --haploid_precise=False --haploid_sensitive=False --include_all_ctgs=True --no_phasing_for_fa=True --pileup_model_prefix=pileup --fa_model_prefix=full_alignment --remove_intermediate_dir=False --enable_phasing=False --enable_long_indel=False --keep_iupac_bases=False --use_gpu=False --longphase_for_phasing=False --longphase=EMPTY --use_whatshap_for_intermediate_phasing=True --use_longphase_for_intermediate_phasing=False --use_whatshap_for_final_output_phasing=False --use_longphase_for_final_output_phasing=False --use_whatshap_for_final_output_haplotagging=False
+
+[INFO] Check environment variables
+[INFO] Create folder /data/results/variant_calling/clair3_vc_raw_to_medaka_nophase/log
+[INFO] Create folder /data/results/variant_calling/clair3_vc_raw_to_medaka_nophase/tmp/pileup_output
+[INFO] Create folder /data/results/variant_calling/clair3_vc_raw_to_medaka_nophase/tmp/merge_output
+[INFO] Create folder /data/results/variant_calling/clair3_vc_raw_to_medaka_nophase/tmp/phase_output
+[INFO] Create folder /data/results/variant_calling/clair3_vc_raw_to_medaka_nophase/tmp/gvcf_tmp_output
+[INFO] Create folder /data/results/variant_calling/clair3_vc_raw_to_medaka_nophase/tmp/full_alignment_output
+[INFO] Create folder /data/results/variant_calling/clair3_vc_raw_to_medaka_nophase/tmp/phase_output/phase_vcf
+[INFO] Create folder /data/results/variant_calling/clair3_vc_raw_to_medaka_nophase/tmp/phase_output/phase_bam
+[INFO] Create folder /data/results/variant_calling/clair3_vc_raw_to_medaka_nophase/tmp/full_alignment_output/candidate_bed
+[INFO] --include_all_ctgs enabled
+[INFO] Call variant in contigs: contig_2 contig_1 contig_4
+[INFO] Chunk number for each contig: 1 1 1
+[INFO] 1/7 Call variants using pileup model
+Calling variants ...
+Total processed positions in contig_4 (chunk 1/1) : 33
+Total time elapsed: 1.75 s
+Calling variants ...
+Total processed positions in contig_2 (chunk 1/1) : 647
+Total time elapsed: 6.05 s
+Calling variants ...
+Total processed positions in contig_1 (chunk 1/1) : 1170
+Total time elapsed: 9.26 s
+
+real	0m11.317s
+user	0m21.662s
+sys	0m0.628s
+[INFO] 2/7 No phasing for full alignment calling
+
+[INFO] 5/7 Select candidates for full-alignment calling
+[INFO] Set variants quality cutoff 7.0
+[INFO] Set reference calls quality cutoff 13.0
+[INFO] Low quality reference calls to be processed in contig_2: 77
+[INFO] Low quality variants to be processed in contig_2: 7
+[INFO] Low quality reference calls to be processed in contig_4: 3
+[INFO] Low quality variants to be processed in contig_4: 0
+[INFO] Low quality reference calls to be processed in contig_1: 101
+[INFO] Low quality variants to be processed in contig_1: 9
+
+real	0m0.416s
+user	0m0.886s
+sys	0m0.054s
+
+[INFO] 6/7 Call low-quality variants using full-alignment model
+Calling variants ...
+Total processed positions in contig_4 (chunk 1/1) : 3
+Total time elapsed: 0.85 s
+Calling variants ...
+Total processed positions in contig_2 (chunk 1/1) : 84
+Total time elapsed: 2.70 s
+Calling variants ...
+Total processed positions in contig_1 (chunk 1/1) : 110
+Total time elapsed: 3.79 s
+
+real	0m5.454s
+user	0m11.687s
+sys	0m0.385s
+
+[INFO] 7/7 Merge pileup VCF and full-alignment VCF
+[INFO] Pileup variants processed in contig_2: 5
+[INFO] Full-alignment variants processed in contig_2: 3
+[INFO] Pileup variants processed in contig_4: 0
+[INFO] Full-alignment variants processed in contig_4: 1
+[INFO] Pileup variants processed in contig_1: 4
+[INFO] Full-alignment variants processed in contig_1: 2
+
+real	0m0.503s
+user	0m1.111s
+sys	0m0.084s
+
+[INFO] Finish calling, output file: /data/results/variant_calling/clair3_vc_raw_to_medaka_nophase/merge_output.vcf.gz
+
+real	0m20.590s
+user	0m38.202s
+sys	0m1.367s

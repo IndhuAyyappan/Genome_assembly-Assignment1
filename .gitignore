@@ -25,4 +25,14 @@ results/**/vc_raw_to_flye_hq.bam
 results/**/flye_hq_to_ref.bam
 
 # Large medaka probability file
-results/**/consensus_probs.hdf
+results/**/consensus_probs.hdfresults/alignment/raw_to_ref.bam
+results/alignment/raw_to_ref.sam
+results/alignment/raw_to_ref.sorted.bam
+results/alignment/vc_raw_to_flye_hq.bam
+results/alignment/vc_raw_to_flye_hq.sam
+results/alignment/vc_raw_to_flye_hq.sorted.bam
+results/alignment/vc_raw_to_medaka.bam
+results/alignment/vc_raw_to_medaka.sam
+results/alignment/vc_raw_to_medaka.sorted.bam
+results/polishing/medaka_flye_hq/calls_to_draft.bam
+results/polishing/medaka_flye_hq/consensus_probs.hdf

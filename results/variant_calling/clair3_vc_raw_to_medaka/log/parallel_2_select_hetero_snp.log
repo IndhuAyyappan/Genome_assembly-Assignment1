@@ -1,0 +1,4 @@
+Seq	Host	Starttime	JobRuntime	Send	Receive	Exitval	Signal	Command
+2	:	1770300565.503	     0.259	0	62	0	0	pypy3 /opt/bin/scripts/../clair3.py SelectHetSnp         --vcf_fn /data/results/variant_calling/clair3_vc_raw_to_medaka/pileup.vcf.gz         --split_folder /data/results/variant_calling/clair3_vc_raw_to_medaka/tmp/phase_output/phase_vcf         --ctgName contig_4
+1	:	1770300565.501	     0.268	0	62	0	0	pypy3 /opt/bin/scripts/../clair3.py SelectHetSnp         --vcf_fn /data/results/variant_calling/clair3_vc_raw_to_medaka/pileup.vcf.gz         --split_folder /data/results/variant_calling/clair3_vc_raw_to_medaka/tmp/phase_output/phase_vcf         --ctgName contig_1
+3	:	1770300565.504	     0.271	0	62	0	0	pypy3 /opt/bin/scripts/../clair3.py SelectHetSnp         --vcf_fn /data/results/variant_calling/clair3_vc_raw_to_medaka/pileup.vcf.gz         --split_folder /data/results/variant_calling/clair3_vc_raw_to_medaka/tmp/phase_output/phase_vcf         --ctgName contig_2

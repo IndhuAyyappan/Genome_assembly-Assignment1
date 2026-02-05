@@ -1,0 +1,1 @@
+/opt/bin/run_clair3.sh --bam_fn /data/results/alignment/vc_raw_to_medaka.sorted.bam --ref_fn /data/results/polishing/medaka_flye_hq/consensus.fasta --threads 16 --platform ont --model_path /opt/models/ont --include_all_ctgs --no_phasing_for_fa --output /data/results/variant_calling/clair3_vc_raw_to_medaka_nophase

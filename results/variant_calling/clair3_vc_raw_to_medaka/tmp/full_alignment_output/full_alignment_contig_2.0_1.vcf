@@ -1,0 +1,103 @@
+##fileformat=VCFv4.2
+##source=Clair3
+##clair3_version=1.1.2
+##cmdline=/opt/bin/run_clair3.sh --bam_fn /data/results/alignment/vc_raw_to_medaka.sorted.bam --ref_fn /data/results/polishing/medaka_flye_hq/consensus.fasta --threads 16 --platform ont --model_path /opt/models/ont_guppy5 --include_all_ctgs --output /data/results/variant_calling/clair3_vc_raw_to_medaka
+##reference=/data/results/polishing/medaka_flye_hq/consensus.fasta
+##FILTER=<ID=PASS,Description="All filters passed">
+##FILTER=<ID=LowQual,Description="Low quality variant">
+##FILTER=<ID=RefCall,Description="Reference call">
+##INFO=<ID=P,Number=0,Type=Flag,Description="Result from pileup calling">
+##INFO=<ID=F,Number=0,Type=Flag,Description="Result from full-alignment calling">
+##FORMAT=<ID=GT,Number=1,Type=String,Description="Genotype">
+##FORMAT=<ID=GQ,Number=1,Type=Integer,Description="Genotype Quality">
+##FORMAT=<ID=DP,Number=1,Type=Integer,Description="Approximate read depth (reads 1. with MQ below 5 or an user-specified threshold, or 2. selected by 'samtools view -F 2316', are filtered)">
+##FORMAT=<ID=AD,Number=R,Type=Integer,Description="Allelic depths for the ref and alt alleles in the order listed">
+##FORMAT=<ID=PL,Number=G,Type=Integer,Description="Normalized, Phred-scaled likelihoods for genotypes as defined in the VCF specification">
+##FORMAT=<ID=AF,Number=A,Type=Float,Description="Observed allele frequency in reads, for each ALT allele, in the same order as listed, or the REF allele for a RefCall">
+##contig=<ID=contig_2,length=1676978>
+##contig=<ID=contig_1,length=3318770>
+##contig=<ID=contig_4,length=109060>
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO	FORMAT	SAMPLE
+contig_2	65	.	C	.	8.15	RefCall	F	GT:GQ:DP:AD:AF	0/0:8:3:2:0.6667
+contig_2	75	.	G	C	5.90	PASS	F	GT:GQ:DP:AD:AF	0/1:5:3:2,1:0.3333
+contig_2	87	.	A	.	7.53	RefCall	F	GT:GQ:DP:AD:AF	0/0:7:3:2:0.6667
+contig_2	89	.	A	.	5.39	RefCall	F	GT:GQ:DP:AD:AF	0/0:5:3:2:0.6667
+contig_2	137	.	C	.	13.81	RefCall	F	GT:GQ:DP:AD:AF	0/0:13:3:2:0.6667
+contig_2	144	.	T	.	13.26	RefCall	F	GT:GQ:DP:AD:AF	0/0:13:3:2:0.6667
+contig_2	147	.	T	.	15.85	RefCall	F	GT:GQ:DP:AD:AF	0/0:15:3:2:0.6667
+contig_2	186	.	T	C	11.97	PASS	F	GT:GQ:DP:AD:AF	0/1:11:4:2,1:0.2500
+contig_2	370	.	A	.	14.15	RefCall	F	GT:GQ:DP:AD:AF	0/0:14:4:3:0.7500
+contig_2	373	.	G	.	12.95	RefCall	F	GT:GQ:DP:AD:AF	0/0:12:4:3:0.7500
+contig_2	377	.	C	.	13.97	RefCall	F	GT:GQ:DP:AD:AF	0/0:13:4:3:0.7500
+contig_2	445	.	G	.	13.51	RefCall	F	GT:GQ:DP:AD:AF	0/0:13:4:2:0.5000
+contig_2	458	.	T	.	13.48	RefCall	F	GT:GQ:DP:AD:AF	0/0:13:4:3:0.7500
+contig_2	459	.	A	.	7.08	RefCall	F	GT:GQ:DP:AD:AF	0/0:7:4:3:0.7500
+contig_2	517	.	C	.	3.94	RefCall	F	GT:GQ:DP:AD:AF	0/0:3:4:2:0.5000
+contig_2	595	.	A	G	11.24	PASS	F	GT:GQ:DP:AD:AF	0/1:11:4:3,1:0.2500
+contig_2	777	.	G	A	5.73	PASS	F	GT:GQ:DP:AD:AF	0/1:5:5:4,1:0.2000
+contig_2	812	.	C	.	8.90	RefCall	F	GT:GQ:DP:AD:AF	0/0:8:5:4:0.8000
+contig_2	816	.	G	.	11.69	RefCall	F	GT:GQ:DP:AD:AF	0/0:11:5:4:0.8000
+contig_2	985	.	A	.	17.46	RefCall	F	GT:GQ:DP:AD:AF	0/0:17:5:4:0.8000
+contig_2	1004	.	T	.	9.01	RefCall	F	GT:GQ:DP:AD:AF	0/0:9:5:4:0.8000
+contig_2	1005	.	G	.	7.72	RefCall	F	GT:GQ:DP:AD:AF	0/0:7:5:4:0.8000
+contig_2	1042	.	G	.	12.77	RefCall	F	GT:GQ:DP:AD:AF	0/0:12:5:4:0.8000
+contig_2	1086	.	C	.	7.18	RefCall	F	GT:GQ:DP:AD:AF	0/0:7:5:4:0.8000
+contig_2	1115	.	A	.	5.43	RefCall	F	GT:GQ:DP:AD:AF	0/0:5:7:6:0.8571
+contig_2	1119	.	A	.	12.60	RefCall	F	GT:GQ:DP:AD:AF	0/0:12:7:5:0.7143
+contig_2	1121	.	A	.	14.51	RefCall	F	GT:GQ:DP:AD:AF	0/0:14:7:6:0.8571
+contig_2	1130	.	C	.	15.61	RefCall	F	GT:GQ:DP:AD:AF	0/0:15:7:6:0.8571
+contig_2	1131	.	C	.	20.28	RefCall	F	GT:GQ:DP:AD:AF	0/0:20:7:6:0.8571
+contig_2	1148	.	C	.	10.54	RefCall	F	GT:GQ:DP:AD:AF	0/0:10:7:6:0.8571
+contig_2	1222	.	T	.	5.33	RefCall	F	GT:GQ:DP:AD:AF	0/0:5:8:7:0.8750
+contig_2	1280	.	T	C	5.75	PASS	F	GT:GQ:DP:AD:AF	0/1:5:9:8,1:0.1111
+contig_2	1325	.	T	.	14.59	RefCall	F	GT:GQ:DP:AD:AF	0/0:14:9:8:0.8889
+contig_2	1397	.	A	.	8.07	RefCall	F	GT:GQ:DP:AD:AF	0/0:8:9:8:0.8889
+contig_2	1433	.	A	.	12.91	RefCall	F	GT:GQ:DP:AD:AF	0/0:12:9:8:0.8889
+contig_2	1450	.	C	.	5.40	RefCall	F	GT:GQ:DP:AD:AF	0/0:5:9:8:0.8889
+contig_2	1517	.	C	T	5.31	PASS	F	GT:GQ:DP:AD:AF	0/1:5:10:9,1:0.1000
+contig_2	1522	.	G	.	5.02	RefCall	F	GT:GQ:DP:AD:AF	0/0:5:10:9:0.9000
+contig_2	2023	.	T	.	8.04	RefCall	F	GT:GQ:DP:AD:AF	0/0:8:19:16:0.8421
+contig_2	396773	.	C	.	20.64	RefCall	F	GT:GQ:DP:AD:AF	0/0:20:182:160:0.8791
+contig_2	458774	.	T	.	23.70	RefCall	F	GT:GQ:DP:AD:AF	0/0:23:188:155:0.8245
+contig_2	507684	.	C	T	6.13	PASS	F	GT:GQ:DP:AD:AF	0/1:6:111:98,9:0.0811
+contig_2	575647	.	T	.	12.40	RefCall	F	GT:GQ:DP:AD:AF	0/0:12:124:79:0.6371
+contig_2	612685	.	T	.	12.89	RefCall	F	GT:GQ:DP:AD:AF	0/0:12:36:32:0.8889
+contig_2	613135	.	G	.	16.41	RefCall	F	GT:GQ:DP:AD:AF	0/0:16:24:19:0.7917
+contig_2	613184	.	G	.	13.56	RefCall	F	GT:GQ:DP:AD:AF	0/0:13:24:21:0.8750
+contig_2	613194	.	A	.	13.96	RefCall	F	GT:GQ:DP:AD:AF	0/0:13:24:20:0.8333
+contig_2	655988	.	C	.	20.29	RefCall	F	GT:GQ:DP:AD:AF	0/0:20:199:162:0.8141
+contig_2	673709	.	G	.	24.99	RefCall	F	GT:GQ:DP:AD:AF	0/0:24:213:184:0.8638
+contig_2	742064	.	G	.	21.10	RefCall	F	GT:GQ:DP:AD:AF	0/0:21:186:157:0.8441
+contig_2	812738	.	T	.	23.57	RefCall	F	GT:GQ:DP:AD:AF	0/0:23:153:109:0.7124
+contig_2	1052100	.	G	.	2.54	RefCall	F	GT:GQ:DP:AD:AF	0/0:2:187:44:0.2353
+contig_2	1072157	.	C	.	16.29	RefCall	F	GT:GQ:DP:AD:AF	0/0:16:154:124:0.8052
+contig_2	1074918	.	T	.	22.66	RefCall	F	GT:GQ:DP:AD:AF	0/0:22:146:102:0.6986
+contig_2	1124257	.	T	.	11.65	RefCall	F	GT:GQ:DP:AD:AF	0/0:11:196:103:0.5255
+contig_2	1291854	.	G	.	23.17	RefCall	F	GT:GQ:DP:AD:AF	0/0:23:164:141:0.8598
+contig_2	1333917	.	G	.	18.15	RefCall	F	GT:GQ:DP:AD:AF	0/0:18:184:167:0.9076
+contig_2	1337245	.	C	G	7.40	PASS	F	GT:GQ:DP:AD:AF	0/1:7:178:149,23:0.1292
+contig_2	1443393	.	C	.	12.68	RefCall	F	GT:GQ:DP:AD:AF	0/0:12:183:163:0.8907
+contig_2	1486237	.	A	.	19.78	RefCall	F	GT:GQ:DP:AD:AF	0/0:19:184:154:0.8370
+contig_2	1548903	.	A	.	13.87	RefCall	F	GT:GQ:DP:AD:AF	0/0:13:155:137:0.8839
+contig_2	1676161	.	T	.	16.17	RefCall	F	GT:GQ:DP:AD:AF	0/0:16:14:12:0.8571
+contig_2	1676291	.	G	.	10.05	RefCall	F	GT:GQ:DP:AD:AF	0/0:10:12:11:0.9167
+contig_2	1676359	.	G	.	14.83	RefCall	F	GT:GQ:DP:AD:AF	0/0:14:10:8:0.8000
+contig_2	1676375	.	T	.	17.97	RefCall	F	GT:GQ:DP:AD:AF	0/0:17:10:9:0.9000
+contig_2	1676388	.	A	.	20.74	RefCall	F	GT:GQ:DP:AD:AF	0/0:20:10:9:0.9000
+contig_2	1676394	.	G	.	15.85	RefCall	F	GT:GQ:DP:AD:AF	0/0:15:10:9:0.9000
+contig_2	1676415	.	A	.	18.11	RefCall	F	GT:GQ:DP:AD:AF	0/0:18:9:7:0.7778
+contig_2	1676417	.	A	G	7.03	PASS	F	GT:GQ:DP:AD:AF	0/1:7:9:7,1:0.1111
+contig_2	1676438	.	C	G	5.42	PASS	F	GT:GQ:DP:AD:AF	0/1:5:9:8,1:0.1111
+contig_2	1676514	.	C	.	8.91	RefCall	F	GT:GQ:DP:AD:AF	0/0:8:8:6:0.7500
+contig_2	1676541	.	T	.	13.64	RefCall	F	GT:GQ:DP:AD:AF	0/0:13:5:4:0.8000
+contig_2	1676571	.	T	.	12.97	RefCall	F	GT:GQ:DP:AD:AF	0/0:12:4:3:0.7500
+contig_2	1676609	.	A	.	13.47	RefCall	F	GT:GQ:DP:AD:AF	0/0:13:4:3:0.7500
+contig_2	1676612	.	G	.	12.76	RefCall	F	GT:GQ:DP:AD:AF	0/0:12:4:3:0.7500
+contig_2	1676613	.	C	.	11.90	RefCall	F	GT:GQ:DP:AD:AF	0/0:11:4:3:0.7500
+contig_2	1676666	.	G	.	11.81	RefCall	F	GT:GQ:DP:AD:AF	0/0:11:4:3:0.7500
+contig_2	1676667	.	A	G	10.17	PASS	F	GT:GQ:DP:AD:AF	0/1:10:4:3,1:0.2500
+contig_2	1676700	.	G	.	15.45	RefCall	F	GT:GQ:DP:AD:AF	0/0:15:4:3:0.7500
+contig_2	1676718	.	C	.	15.03	RefCall	F	GT:GQ:DP:AD:AF	0/0:15:4:3:0.7500
+contig_2	1676720	.	C	.	15.98	RefCall	F	GT:GQ:DP:AD:AF	0/0:15:4:3:0.7500
+contig_2	1676731	.	T	.	16.65	RefCall	F	GT:GQ:DP:AD:AF	0/0:16:4:3:0.7500
+contig_2	1676733	.	C	.	14.29	RefCall	F	GT:GQ:DP:AD:AF	0/0:14:4:3:0.7500
