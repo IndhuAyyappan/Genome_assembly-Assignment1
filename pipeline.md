@@ -1,4 +1,4 @@
-# Pipeline (Assignment 1): ONT reads - Flye assembly - QUAST - read-based variant calling (Clair3) - IGV
+# Pipeline :
 
 This document has the exact workflow used for **Salmonella enterica** ONT R10 reads (`SRR32410565.fastq`).
 The assignment goal is to:
@@ -7,7 +7,6 @@ The assignment goal is to:
 3) Call variants vs the reference genome (Clair3; read-based)  
 4) Visualize differences in IGV (BAM + VCF on reference coordinates)
 
----
 ### MAIN workflow used in Discussion 
 Raw ONT reads  
 **Flye HQ assembly** (final assembly)  
@@ -32,8 +31,6 @@ These analyses were performed to validate assumptions or explore alternative str
 
 All exploratory outputs are clearly separated in folder structure.
 
----
-
 ## Inputs
 - Raw ONT reads: `data/raw/SRR32410565.fastq`
 - Reference genome: `data/reference/GCF_000006945.2_ASM694v2_genomic.fna`
@@ -45,8 +42,6 @@ All exploratory outputs are clearly separated in folder structure.
 - QUAST: `results/quast/`
 - Polishing: `results/polishing/medaka_flye_hq/`
 - Variant calling: `results/variant_calling/`
-
----
 
 
 ## 0) Raw read QC (exploratory)
