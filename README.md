@@ -22,6 +22,12 @@ Genome assembly will be done using Flye. Flye is a long-read assembler that is c
 
 After the assembly is generated, the assembled genome will be compared with a reference *Salmonella enterica* genome obtained from NCBI. The comparison will be done by aligning the assembly to the reference using minimap2. The alignment output will then be sorted and indexed using samtools so that it can be examined further. Visual inspection of the alignment will be carried out using IGV to look for structural variation and possible assembly related issues [7].Following alignment to the reference genome, variant calling will be performed to identify sequence level differences between the assembled genome and the reference. Single nucleotide variants and small insertions and deletions will be identified using Clair3, a variant caller designed for long-read sequencing data, including Oxford Nanopore reads [9]. The identified variants will be used to assess base level accuracy and to further characterize differences between the assembled genome and the reference strain.
 
+### Pipeline parameters
+
+Genome assembly will be performed using Flye with the `--nano-hq` preset, which is optimized for high accuracy Oxford Nanopore R10 reads. The final assembly will be aligned to a reference *Salmonella enterica* genome obtained from NCBI using minimap2 with an assembly alignment preset (`-ax asm`). Alignment files will be sorted and indexed using samtools, and visually inspected in IGV to assess large-scale structural consistency and potential assembly related issues.
+
+For variant detection, raw Oxford Nanopore reads will be aligned directly to the reference genome using minimap2 with the `-ax map-ont` preset. Variant calling will be performed using Clair3 to identify single nucleotide variants and small insertions and deletions relative to the reference genome.
+
 ## References
 
 [1] Wick RR, Judd LM, Holt KE. *Assembling the perfect bacterial genome using Oxford Nanopore and Illumina sequencing*. PLOS Computational Biology, 2023.\
