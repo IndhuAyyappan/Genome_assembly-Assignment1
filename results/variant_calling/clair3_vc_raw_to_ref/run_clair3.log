@@ -2,9 +2,9 @@
 [INFO] BAM FILE PATH: /data/results/alignment/raw_to_ref.sorted.bam
 [INFO] REFERENCE FILE PATH: /data/data/reference/GCF_000006945.2_ASM694v2_genomic.fna
 [INFO] MODEL PATH: /opt/models/r1041_e82_400bps_sup_v500
-[INFO] OUTPUT FOLDER: /data/results/variant_calling/clair3_raw
+[INFO] OUTPUT FOLDER: /data/results/variant_calling/clair3_vc_raw_to_ref
 [INFO] PLATFORM: ont
-[INFO] THREADS: 16
+[INFO] THREADS: 6
 [INFO] BED FILE PATH: EMPTY
 [INFO] VCF FILE PATH: EMPTY
 [INFO] CONTIGS: EMPTY
@@ -42,43 +42,42 @@
 [INFO] ENABLE LONG INDEL CALLING: False
 [INFO] ENABLE C_IMPLEMENT: True
 
-[33m[WARNING] Threads setting exceeds maximum available threads 6, set threads=6[0m
-+ /opt/bin/scripts/clair3_c_impl.sh --bam_fn /data/results/alignment/raw_to_ref.sorted.bam --ref_fn /data/data/reference/GCF_000006945.2_ASM694v2_genomic.fna --threads 6 --model_path /opt/models/r1041_e82_400bps_sup_v500 --platform ont --output /data/results/variant_calling/clair3_raw --bed_fn=EMPTY --vcf_fn=EMPTY --ctg_name=EMPTY --sample_name=SAMPLE --chunk_num=0 --chunk_size=5000000 --samtools=samtools --python=python3 --pypy=pypy3 --parallel=parallel --whatshap=whatshap --qual=2 --var_pct_full=0.7 --ref_pct_full=0.1 --var_pct_phasing=0.7 --snp_min_af=0.08 --indel_min_af=0.15 --min_mq=5 --min_coverage=2 --min_contig_size=0 --pileup_only=False --gvcf=False --base_err=0.001 --gq_bin_size=5 --fast_mode=False --call_snp_only=False --enable_variant_calling_at_sequence_head_and_tail=False --output_all_contigs_in_gvcf_header=False --print_ref_calls=False --haploid_precise=False --haploid_sensitive=False --include_all_ctgs=True --no_phasing_for_fa=False --pileup_model_prefix=pileup --fa_model_prefix=full_alignment --remove_intermediate_dir=False --enable_phasing=False --enable_long_indel=False --keep_iupac_bases=False --use_gpu=False --longphase_for_phasing=False --longphase=EMPTY --use_whatshap_for_intermediate_phasing=True --use_longphase_for_intermediate_phasing=False --use_whatshap_for_final_output_phasing=False --use_longphase_for_final_output_phasing=False --use_whatshap_for_final_output_haplotagging=False
++ /opt/bin/scripts/clair3_c_impl.sh --bam_fn /data/results/alignment/raw_to_ref.sorted.bam --ref_fn /data/data/reference/GCF_000006945.2_ASM694v2_genomic.fna --threads 6 --model_path /opt/models/r1041_e82_400bps_sup_v500 --platform ont --output /data/results/variant_calling/clair3_vc_raw_to_ref --bed_fn=EMPTY --vcf_fn=EMPTY --ctg_name=EMPTY --sample_name=SAMPLE --chunk_num=0 --chunk_size=5000000 --samtools=samtools --python=python3 --pypy=pypy3 --parallel=parallel --whatshap=whatshap --qual=2 --var_pct_full=0.7 --ref_pct_full=0.1 --var_pct_phasing=0.7 --snp_min_af=0.08 --indel_min_af=0.15 --min_mq=5 --min_coverage=2 --min_contig_size=0 --pileup_only=False --gvcf=False --base_err=0.001 --gq_bin_size=5 --fast_mode=False --call_snp_only=False --enable_variant_calling_at_sequence_head_and_tail=False --output_all_contigs_in_gvcf_header=False --print_ref_calls=False --haploid_precise=False --haploid_sensitive=False --include_all_ctgs=True --no_phasing_for_fa=False --pileup_model_prefix=pileup --fa_model_prefix=full_alignment --remove_intermediate_dir=False --enable_phasing=False --enable_long_indel=False --keep_iupac_bases=False --use_gpu=False --longphase_for_phasing=False --longphase=EMPTY --use_whatshap_for_intermediate_phasing=True --use_longphase_for_intermediate_phasing=False --use_whatshap_for_final_output_phasing=False --use_longphase_for_final_output_phasing=False --use_whatshap_for_final_output_haplotagging=False
 
 [INFO] Check environment variables
-[INFO] Create folder /data/results/variant_calling/clair3_raw/log
-[INFO] Create folder /data/results/variant_calling/clair3_raw/tmp/pileup_output
-[INFO] Create folder /data/results/variant_calling/clair3_raw/tmp/merge_output
-[INFO] Create folder /data/results/variant_calling/clair3_raw/tmp/phase_output
-[INFO] Create folder /data/results/variant_calling/clair3_raw/tmp/gvcf_tmp_output
-[INFO] Create folder /data/results/variant_calling/clair3_raw/tmp/full_alignment_output
-[INFO] Create folder /data/results/variant_calling/clair3_raw/tmp/phase_output/phase_vcf
-[INFO] Create folder /data/results/variant_calling/clair3_raw/tmp/phase_output/phase_bam
-[INFO] Create folder /data/results/variant_calling/clair3_raw/tmp/full_alignment_output/candidate_bed
+[INFO] Create folder /data/results/variant_calling/clair3_vc_raw_to_ref/log
+[INFO] Create folder /data/results/variant_calling/clair3_vc_raw_to_ref/tmp/pileup_output
+[INFO] Create folder /data/results/variant_calling/clair3_vc_raw_to_ref/tmp/merge_output
+[INFO] Create folder /data/results/variant_calling/clair3_vc_raw_to_ref/tmp/phase_output
+[INFO] Create folder /data/results/variant_calling/clair3_vc_raw_to_ref/tmp/gvcf_tmp_output
+[INFO] Create folder /data/results/variant_calling/clair3_vc_raw_to_ref/tmp/full_alignment_output
+[INFO] Create folder /data/results/variant_calling/clair3_vc_raw_to_ref/tmp/phase_output/phase_vcf
+[INFO] Create folder /data/results/variant_calling/clair3_vc_raw_to_ref/tmp/phase_output/phase_bam
+[INFO] Create folder /data/results/variant_calling/clair3_vc_raw_to_ref/tmp/full_alignment_output/candidate_bed
 [INFO] --include_all_ctgs enabled
 [93m[WARNING] Please enable --no_phasing_for_fa if calling variant in non-diploid organisms[0m
-[INFO] Call variant in contigs: NC_003277.2 NC_003197.2
+[INFO] Call variant in contigs: NC_003197.2 NC_003277.2
 [INFO] Chunk number for each contig: 1 1
 [INFO] 1/7 Call variants using pileup model
 Calling variants ...
 Total processed positions in NC_003277.2 (chunk 1/1) : 8464
-Total time elapsed: 13.73 s
+Total time elapsed: 13.85 s
 Calling variants ...
 Total processed positions in NC_003197.2 (chunk 1/1) : 7643
-Total time elapsed: 21.11 s
+Total time elapsed: 21.63 s
 
-real	0m23.858s
-user	0m37.731s
-sys	0m1.073s
+real	0m24.327s
+user	0m38.281s
+sys	0m1.035s
 
 [INFO] 2/7 Select heterozygous SNP variants for Whatshap phasing and haplotagging
 [INFO] Select heterozygous pileup variants exceeding phasing quality cutoff 8
-[INFO] Total heterozygous SNP positions selected: NC_003197.2: 126
 [INFO] Total heterozygous SNP positions selected: NC_003277.2: 6
+[INFO] Total heterozygous SNP positions selected: NC_003197.2: 126
 
-real	0m0.393s
-user	0m0.602s
-sys	0m0.038s
+real	0m0.399s
+user	0m0.613s
+sys	0m0.041s
 
 [INFO] 3/7 Phase VCF file using Whatshap
 This is WhatsHap 1.7 running under Python 3.9.0
@@ -93,7 +92,7 @@ Phasing 1 sample by solving the MEC problem ...
 Largest block contains 5 variants (100.0% of accessible variants) between position 53981 and 54272
 
 # Resource usage
-Maximum memory usage: 0.054 GB
+Maximum memory usage: 0.055 GB
 Time spent reading BAM/CRAM:                    0.1 s
 Time spent parsing VCF:                         0.0 s
 Time spent selecting reads:                     0.0 s
@@ -124,33 +123,33 @@ Time spent finding components:                  0.0 s
 Time spent on rest:                             0.0 s
 Total elapsed time:                             4.1 s
 
-real	0m4.508s
-user	0m4.768s
-sys	0m0.178s
+real	0m4.514s
+user	0m4.796s
+sys	0m0.160s
 
 [INFO] 5/7 Select candidates for full-alignment calling
 [INFO] Set variants quality cutoff 35.0
 [INFO] Set reference calls quality cutoff 10.0
-[INFO] Low quality reference calls to be processed in NC_003277.2: 72
-[INFO] Low quality variants to be processed in NC_003277.2: 5207
 [INFO] Low quality reference calls to be processed in NC_003197.2: 472
 [INFO] Low quality variants to be processed in NC_003197.2: 2232
+[INFO] Low quality reference calls to be processed in NC_003277.2: 72
+[INFO] Low quality variants to be processed in NC_003277.2: 5207
 
-real	0m0.412s
-user	0m0.628s
-sys	0m0.044s
+real	0m0.413s
+user	0m0.626s
+sys	0m0.046s
 
 [INFO] 6/7 Call low-quality variants using full-alignment model
 Calling variants ...
 Total processed positions in NC_003197.2 (chunk 1/1) : 2704
-Total time elapsed: 39.72 s
+Total time elapsed: 40.89 s
 Calling variants ...
 Total processed positions in NC_003277.2 (chunk 1/1) : 5279
-Total time elapsed: 64.61 s
+Total time elapsed: 64.98 s
 
-real	1m6.146s
-user	1m46.566s
-sys	0m0.727s
+real	1m6.557s
+user	1m48.278s
+sys	0m0.677s
 
 [INFO] 7/7 Merge pileup VCF and full-alignment VCF
 [INFO] Pileup variants processed in NC_003197.2: 657
@@ -158,12 +157,12 @@ sys	0m0.727s
 [INFO] Pileup variants processed in NC_003277.2: 2540
 [INFO] Full-alignment variants processed in NC_003277.2: 5049
 
-real	0m0.542s
-user	0m0.847s
-sys	0m0.077s
+real	0m0.538s
+user	0m0.864s
+sys	0m0.085s
 
-[INFO] Finish calling, output file: /data/results/variant_calling/clair3_raw/merge_output.vcf.gz
+[INFO] Finish calling, output file: /data/results/variant_calling/clair3_vc_raw_to_ref/merge_output.vcf.gz
 
-real	1m39.260s
-user	2m34.172s
-sys	0m2.378s
+real	1m40.013s
+user	2m36.520s
+sys	0m2.277s

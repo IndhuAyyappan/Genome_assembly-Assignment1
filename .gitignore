@@ -8,31 +8,25 @@ data/raw/
 data/raw/
 data/reference/
 # Large alignment files (could not upload to GitHub)
-results/alignment/*.sam
-results/alignment/*.bam
-results/alignment/*.bai
-# but allow the small Flye HQ assembly-to-ref alignment files
+# Raw reads to reference
+results/alignment/raw_to_ref.sam
+results/alignment/raw_to_ref.bam
+results/alignment/raw_to_ref.sorted.bam
+
+# Reads to Flye HQ
+results/alignment/vc_raw_to_flye_hq.sam
+results/alignment/vc_raw_to_flye_hq.bam
+results/alignment/vc_raw_to_flye_hq.sorted.bam
+
+# Reads to Medaka
+results/alignment/vc_raw_to_medaka.sam
+results/alignment/vc_raw_to_medaka.bam
+results/alignment/vc_raw_to_medaka.sorted.bam
+# Small BAM index files needed for IGV
 !results/alignment/flye_hq_to_ref.sam
 !results/alignment/flye_hq_to_ref.bam
 !results/alignment/flye_hq_to_ref.sorted.bam
 !results/alignment/flye_hq_to_ref.sorted.bam.bai
-
-
-!results/alignment/vc_raw_to_flye_hq.sorted.bam.bai
-# Large BAM files (>100MB)
-results/**/calls_to_draft.bam
-results/**/vc_raw_to_flye_hq.bam
-results/**/flye_hq_to_ref.bam
-
-# Large medaka probability file
-results/**/consensus_probs.hdfresults/alignment/raw_to_ref.bam
-results/alignment/raw_to_ref.sam
-results/alignment/raw_to_ref.sorted.bam
-results/alignment/vc_raw_to_flye_hq.bam
-results/alignment/vc_raw_to_flye_hq.sam
-results/alignment/vc_raw_to_flye_hq.sorted.bam
-results/alignment/vc_raw_to_medaka.bam
-results/alignment/vc_raw_to_medaka.sam
-results/alignment/vc_raw_to_medaka.sorted.bam
+# Medaka big intermediates
 results/polishing/medaka_flye_hq/calls_to_draft.bam
 results/polishing/medaka_flye_hq/consensus_probs.hdf

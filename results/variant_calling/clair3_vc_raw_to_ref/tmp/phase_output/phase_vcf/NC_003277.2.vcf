@@ -1,0 +1,25 @@
+##fileformat=VCFv4.2
+##source=Clair3
+##clair3_version=1.1.2
+##cmdline=/opt/bin/run_clair3.sh --bam_fn=/data/results/alignment/raw_to_ref.sorted.bam --ref_fn=/data/data/reference/GCF_000006945.2_ASM694v2_genomic.fna --threads=6 --platform=ont --model_path=/opt/models/r1041_e82_400bps_sup_v500 --include_all_ctgs --output=/data/results/variant_calling/clair3_vc_raw_to_ref
+##reference=/data/data/reference/GCF_000006945.2_ASM694v2_genomic.fna
+##FILTER=<ID=PASS,Description="All filters passed">
+##FILTER=<ID=LowQual,Description="Low quality variant">
+##FILTER=<ID=RefCall,Description="Reference call">
+##INFO=<ID=P,Number=0,Type=Flag,Description="Result from pileup calling">
+##INFO=<ID=F,Number=0,Type=Flag,Description="Result from full-alignment calling">
+##FORMAT=<ID=GT,Number=1,Type=String,Description="Genotype">
+##FORMAT=<ID=GQ,Number=1,Type=Integer,Description="Genotype Quality">
+##FORMAT=<ID=DP,Number=1,Type=Integer,Description="Approximate read depth (reads 1. with MQ below 5 or an user-specified threshold, or 2. selected by 'samtools view -F 2316', are filtered)">
+##FORMAT=<ID=AD,Number=R,Type=Integer,Description="Allelic depths for the ref and alt alleles in the order listed">
+##FORMAT=<ID=PL,Number=G,Type=Integer,Description="Normalized, Phred-scaled likelihoods for genotypes as defined in the VCF specification">
+##FORMAT=<ID=AF,Number=A,Type=Float,Description="Observed allele frequency in reads, for each ALT allele, in the same order as listed, or the REF allele for a RefCall">
+##contig=<ID=NC_003197.2,length=4857450>
+##contig=<ID=NC_003277.2,length=93933>
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO	FORMAT	SAMPLE
+NC_003277.2	53981	.	T	C	12.66	PASS	P	GT:GQ:DP:AD:AF	0/1:12:348:245,90:0.2586
+NC_003277.2	53999	.	G	A	22.19	PASS	P	GT:GQ:DP:AD:AF	0/1:22:348:172,170:0.4885
+NC_003277.2	54116	.	T	A	15.31	PASS	P	GT:GQ:DP:AD:AF	0/1:15:364:88,242:0.6648
+NC_003277.2	54119	.	T	G	10.22	PASS	P	GT:GQ:DP:AD:AF	0/1:10:364:92,251:0.6896
+NC_003277.2	54272	.	C	A	9.13	PASS	P	GT:GQ:DP:AD:AF	0/1:9:377:174,186:0.4934
+NC_003277.2	91785	.	C	G	13.23	PASS	P	GT:GQ:DP:AD:AF	0/1:13:225:39,172:0.7644

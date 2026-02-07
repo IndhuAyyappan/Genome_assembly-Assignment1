@@ -1,0 +1,1 @@
+/opt/bin/run_clair3.sh --bam_fn=/data/results/alignment/raw_to_ref.sorted.bam --ref_fn=/data/data/reference/GCF_000006945.2_ASM694v2_genomic.fna --threads=6 --platform=ont --model_path=/opt/models/r1041_e82_400bps_sup_v500 --include_all_ctgs --no_phasing_for_fa --output=/data/results/variant_calling/clair3_vc_raw_to_ref_nophase
