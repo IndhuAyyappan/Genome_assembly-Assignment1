@@ -39,13 +39,25 @@ For comparison, an exploratory baseline Flye `--nano-raw` assembly was more frag
 
 **Figure 1.** QUAST summary comparing the Flye HQ assembly (assembly) and Medaka-polished consensus (consensus) against the *S. enterica* reference genome. Polishing resulted in minimal changes to contiguity and error metrics.
 
-### Variant Calling
+### Variant Visualization (IGV)
 
-Variants were identified by aligning raw Oxford Nanopore reads directly to the S. enterica reference genome using minimap2 (`map-ont`), followed by variant calling with Clair3. Variant statistics were summarized using bcftools.
+Representative SNPs and indels were visually inspected in IGV to validate variant calls. Raw Oxford Nanopore read alignments and the Flye HQ assembly were examined against the S. enterica reference genome to assess read support and consistency.
 
-On the primary chromosome (NC_003197.2), a total of **2,958 variants** were detected, consisting of **2,462 SNPs** and **504 indels**. The secondary replicon (NC_003277.2) showed a higher variant density (**7,589 total variants**), including **6,905 SNPs** and **688 indels**.
+Three representative sites on the main chromosome (NC_003197.2) were selected: **831 (SNP)**, **15775 (SNP)**, and **19756 (indel)**.At each locus, the alternate allele was consistently supported across multiple reads and the observed pattern in the read pileup matched the variant reported by Clair3 (Fig. 2–4), indicating true sequence variation.
 
-These results indicate that while the overall assembly is structurally consistent with the reference genome, substantial base-level variation remains detectable, particularly in the secondary replicon.
+![IGV SNP at NC_003197.2:831](figures/igv_snp_831.png)
+
+**Figure 2.** IGV view of a SNP supported by consistent base substitution across raw reads and the Flye HQ assembly.
+
+![IGV SNP at NC_003197.2:15775](figures/igv_snp_15775.png)
+
+**Figure 3.** IGV visualization of a SNP showing uniform nucleotide substitution across aligned reads and the assembled genome.
+
+![IGV indel at NC_003197.2:19756](figures/igv_indel_19756.png)
+
+**Figure 4.** IGV visualization of an insertion/deletion (indel) at position NC_003197.2:19756, showing consistent read support across raw Oxford Nanopore reads and the Flye HQ assembly relative to the reference genome.
+
+This indel results in a length change relative to the reference sequence. If this is located within a coding region, it could cause a frameshift mutation and potentially alter downstream amino acid sequence and gene function.
 
 ## References
 
