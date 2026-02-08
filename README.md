@@ -28,6 +28,15 @@ Genome assembly will be performed using Flye with the `--nano-hq` preset, which 
 
 For variant detection, raw Oxford Nanopore reads will be aligned directly to the reference genome using minimap2 with the `-ax map-ont` preset. Variant calling will be performed using Clair3 to identify single nucleotide variants and small insertions and deletions relative to the reference genome.
 
+### Assembly
+
+The genome assembly was generated from Oxford Nanopore reads using Flye `--nano-hq` and compared to the *S. enterica* reference genome (GCF_000006945.2_ASM694v2) using QUAST (Fig. 1). The Flye HQ assembly consisted of **3 contigs**, with a total length of **5,104,812 bp** and a largest contig of **3,318,776 bp**. QUAST reported a genome fraction of **95.669%** and a duplication ratio of **1.002**, indicating strong overall agreement with the reference. The assembly contained **25 misassemblies**, with **27.39 mismatches per 100 kbp** and **3.81 indels per 100 kbp**.
+
+For comparison, an exploratory baseline Flye `--nano-raw` assembly was more fragmented (**9 contigs**; largest contig **1,576,260 bp**), while the overall genome fraction remained similar (**95.391%**). Medaka polishing of the Flye HQ assembly produced minimal changes in QUAST summary metrics (genome fraction remained **95.669%**, contigs remained **3**), so the Flye HQ assembly was used as the primary assembly for downstream alignment inspection.
+
+![Fig. 1. QUAST summary comparing the Flye HQ assembly (assembly) and Medaka polished consensus (consensus) to the *S. enterica* reference genome. Polishing resulted in minimal changes to contiguity and error metrics.](figures/quast_flye_hq_vs_ref_summary.png)
+
+
 ## References
 
 [1] Wick RR, Judd LM, Holt KE. *Assembling the perfect bacterial genome using Oxford Nanopore and Illumina sequencing*. PLOS Computational Biology, 2023.\
