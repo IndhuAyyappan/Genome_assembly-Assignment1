@@ -63,11 +63,11 @@ This indel results in a length change relative to the reference sequence. If thi
 
 The assembled **Salmonella enterica** genome showed strong agreement with the reference, with a genome fraction of **~95.7%** and a low duplication ratio. The final assembly consisted of **three contigs**, indicating high contiguity achieved using Oxford Nanopore long-read sequencing. However, the presence of multiple misassemblies suggests that repetitive regions and structural complexity remain challenging, even with long-read data [2,5].
 
-Base-level comparison to the reference genome identified **thousands of variants**, including SNPs and small indels. The primary chromosome **(NC_003197.2)** contained fewer variants than the secondary replicon **(NC_003277.2)**, which showed a higher variant density. This observation is consistent with prior studies reporting increased variability in secondary replicons and plasmid associated regions relative to the core chromosome [1,3].
+Base-level comparison to the reference genome identified thousands of variants, including SNPs and small indels. The primary chromosome **(NC_003197.2)** contained fewer variants than the secondary replicon **(NC_003277.2)**, which showed a higher variant density. This observation is consistent with prior studies reporting increased variability in secondary replicons and plasmid associated regions relative to the core chromosome [1,3].
 
 Visual inspection in **Integrative Genomics Viewer (IGV)** supported the reliability of the variant calls. Representative SNPs and an indel showed consistent support across raw Oxford Nanopore reads and the Flye HQ assembly. This concordance between read-level evidence and assembly alignment suggests that the detected variants represent true sequence differences rather than potential mapping errors.
 
-From a biological perspective, SNPs may lead to **synonymous or nonsynonymous** substitutions depending on their genomic location. Indels occurring within coding regions may cause **frameshift mutations**, potentially altering downstream protein sequences and gene function. While functional annotation was not performed, these variants represent plausible sources of strain level genetic variation in **S. enterica** [4].
+From a biological perspective, SNPs may lead to **synonymous or nonsynonymous** substitutions depending on their genomic location [10]. Indels occurring within coding regions may cause **frameshift mutations**, potentially altering downstream protein sequences and gene function. While functional annotation was not performed, these variants represent plausible sources of strain level genetic variation in **S. enterica** [4].
 
 Overall, this analysis demonstrates that combining long-read assembly, read-based variant calling and IGV visualization provides a robust framework for genome comparison. Integrating structural metrics with base level validation allows for more confident interpretation of genomic differences relative to a reference genome.
 
@@ -82,3 +82,4 @@ Overall, this analysis demonstrates that combining long-read assembly, read-base
 [7] Thorvaldsdóttir H, Robinson JT, Mesirov JP. *Integrative Genomics Viewer (IGV): high-performance genomics data visualization*. Bioinformatics, 2013.\
 [8] Wick RR, Judd LM, Holt KE. Performance of neural network basecalling tools for Oxford Nanopore sequencing. Genome Biology, 2019.                  
 [9] Zheng Z, Li S, Su J, et al. Symphonizing pileup and full-alignment for deep learning–based long-read variant calling. Nature Computational Science, 2022.
+[10] Nei M, Kumar S. Molecular Evolution and Phylogenetics. Oxford University Press, 2000.
