@@ -43,7 +43,7 @@ For comparison, an exploratory baseline Flye `--nano-raw` assembly was more frag
 
 Representative SNPs and indels were visually inspected in IGV to validate variant calls. Raw Oxford Nanopore read alignments and the Flye HQ assembly were examined against the S. enterica reference genome to assess read support and consistency.
 
-Three representative sites on the main chromosome (NC_003197.2) were selected: **831 (SNP)**, **15775 (SNP)**, and **19756 (indel)**. At each locus, the alternate allele was consistently supported across multiple reads and the observed pattern in the read pileup matched the variant reported by Clair3 (Fig. 2–4), indicating true sequence variation.
+Three representative sites on the main chromosome (NC_003197.2) were selected: **831 (SNP)**, **15775 (SNP)** and **19756 (indel)**. At each locus, the alternate allele was consistently supported across multiple reads and the observed pattern in the read pileup matched the variant reported by Clair3 (Fig. 2–4), indicating true sequence variation.
 
 ![IGV SNP at NC_003197.2:831](figures/igv_snp_831.png)
 
@@ -81,5 +81,5 @@ Overall, this analysis demonstrates that combining long-read assembly, read-base
 [6] Li H. *Minimap2: pairwise alignment for nucleotide sequences*. Bioinformatics, 2018.\
 [7] Thorvaldsdóttir H, Robinson JT, Mesirov JP. *Integrative Genomics Viewer (IGV): high-performance genomics data visualization*. Bioinformatics, 2013.\
 [8] Wick RR, Judd LM, Holt KE. Performance of neural network basecalling tools for Oxford Nanopore sequencing. Genome Biology, 2019.                  
-[9] Zheng Z, Li S, Su J, et al. Symphonizing pileup and full-alignment for deep learning–based long-read variant calling. Nature Computational Science, 2022.
+[9] Zheng Z, Li S, Su J, et al. Symphonizing pileup and full-alignment for deep learning–based long-read variant calling. Nature Computational Science, 2022. 
 [10] Nei M, Kumar S. Molecular Evolution and Phylogenetics. Oxford University Press, 2000.
