@@ -43,7 +43,7 @@ For comparison, an exploratory baseline Flye `--nano-raw` assembly was more frag
 
 Representative SNPs and indels were visually inspected in IGV to validate variant calls. Raw Oxford Nanopore read alignments and the Flye HQ assembly were examined against the S. enterica reference genome to assess read support and consistency.
 
-Three representative sites on the main chromosome (NC_003197.2) were selected: **831 (SNP)**, **15775 (SNP)**, and **19756 (indel)**.At each locus, the alternate allele was consistently supported across multiple reads and the observed pattern in the read pileup matched the variant reported by Clair3 (Fig. 2–4), indicating true sequence variation.
+Three representative sites on the main chromosome (NC_003197.2) were selected: **831 (SNP)**, **15775 (SNP)**, and **19756 (indel)**. At each locus, the alternate allele was consistently supported across multiple reads and the observed pattern in the read pileup matched the variant reported by Clair3 (Fig. 2–4), indicating true sequence variation.
 
 ![IGV SNP at NC_003197.2:831](figures/igv_snp_831.png)
 
@@ -58,6 +58,18 @@ Three representative sites on the main chromosome (NC_003197.2) were selected: *
 **Figure 4.** IGV visualization of an insertion/deletion (indel) at position NC_003197.2:19756, showing consistent read support across raw Oxford Nanopore reads and the Flye HQ assembly relative to the reference genome.
 
 This indel results in a length change relative to the reference sequence. If this is located within a coding region, it could cause a frameshift mutation and potentially alter downstream amino acid sequence and gene function.
+
+## Discussion
+
+The assembled **Salmonella enterica** genome showed strong agreement with the reference, with a genome fraction of **~95.7%** and a low duplication ratio. The final assembly consisted of **three contigs**, indicating high contiguity achieved using Oxford Nanopore long-read sequencing. However, the presence of multiple misassemblies suggests that repetitive regions and structural complexity remain challenging, even with long-read data [2,5].
+
+Base-level comparison to the reference genome identified **thousands of variants**, including SNPs and small indels. The primary chromosome **(NC_003197.2)** contained fewer variants than the secondary replicon **(NC_003277.2)**, which showed a higher variant density. This observation is consistent with prior studies reporting increased variability in secondary replicons and plasmid associated regions relative to the core chromosome [1,3].
+
+Visual inspection in **Integrative Genomics Viewer (IGV)** supported the reliability of the variant calls. Representative SNPs and an indel showed consistent support across raw Oxford Nanopore reads and the Flye HQ assembly. This concordance between read-level evidence and assembly alignment suggests that the detected variants represent true sequence differences rather than potential mapping errors.
+
+From a biological perspective, SNPs may lead to **synonymous or nonsynonymous** substitutions depending on their genomic location. Indels occurring within coding regions may cause **frameshift mutations**, potentially altering downstream protein sequences and gene function. While functional annotation was not performed, these variants represent plausible sources of strain level genetic variation in **S. enterica** [4].
+
+Overall, this analysis demonstrates that combining long-read assembly, read-based variant calling and IGV visualization provides a robust framework for genome comparison. Integrating structural metrics with base level validation allows for more confident interpretation of genomic differences relative to a reference genome.
 
 ## References
 
