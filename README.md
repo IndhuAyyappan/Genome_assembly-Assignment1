@@ -91,7 +91,8 @@ Because these variants fall within coding sequences, SNPs may be synonymous or n
 [5] Thrash A, Hoffmann F, Perkins A. *Toward a more holistic method of genome assembly assessment*. BMC Bioinformatics, 2020.\
 [6] Li H. *Minimap2: pairwise alignment for nucleotide sequences*. Bioinformatics, 2018.\
 [7] Thorvaldsdóttir H, Robinson JT, Mesirov JP. *Integrative Genomics Viewer (IGV): high-performance genomics data visualization*. Bioinformatics, 2013.\
-[8] Wick RR, Judd LM, Holt KE. Performance of neural network basecalling tools for Oxford Nanopore sequencing. Genome Biology, 2019.                  
-[9] Zheng Z, Li S, Su J, et al. Symphonizing pileup and full-alignment for deep learning–based long-read variant calling. Nature Computational Science, 2022. 
+[8] Wick RR, Judd LM, Holt KE. Performance of neural network basecalling tools for Oxford Nanopore sequencing. Genome Biology, 2019.       [9] Zheng Z, Li S, Su J, et al. Symphonizing pileup and full-alignment for deep learning–based long-read variant calling. Nature Computational Science, 2022.
+
 [10] Hu L, Cao G, Brown EW, Allard MW, Ma LM, Zhang G. Whole genome sequencing and protein structure analyses of target genes for the detection of Salmonella. Scientific Reports.2021
+
 [11] Martínez-Flores I, Pérez-Morales D, Sánchez-Pérez M, et al. *In silico clustering of Salmonella global gene expression data reveals novel genes co-regulated with the SPI-1 virulence genes through HilD*. Scientific Reports, 2016.
