@@ -63,11 +63,11 @@ This indel results in a length change relative to the reference sequence. If thi
 
 The assembled **Salmonella enterica** genome showed strong agreement with the reference, with a genome fraction of **~95.7%** and a low duplication ratio. The final assembly consisted of **three contigs**, indicating high contiguity achieved using Oxford Nanopore long-read sequencing. QUAST-reported misassemblies reflect structural differences relative to the reference genome rather than assembly errors[2,5].
 
-Base-level comparison to the reference genome identified thousands of variants, including SNPs and small indels. The primary chromosome **(NC_003197.2)** contained fewer variants than the secondary replicon **(NC_003277.2)**, in our dataset, indicating higher divergence relative to the chosen reference at this replicon.
+Base-level comparison to the reference genome identified thousands of variants, including SNPs and small indels. The primary chromosome **(NC_003197.2)** contained fewer variants than the secondary replicon **(NC_003277.2)**, in our dataset, suggesting greater sequence divergence relative to the reference at this replicon in the present dataset.
 
 Visual inspection in **Integrative Genomics Viewer (IGV)** supported the reliability of the variant calls. Representative SNPs and an indel showed consistent support across raw Oxford Nanopore reads and the Flye HQ assembly. This concordance between read-level evidence and assembly alignment suggests that the detected variants represent true sequence differences rather than potential mapping errors.
 
-From a biological perspective, SNPs within coding regions may be synonymous or nonsynonymous. The nonsynonymous substitutions occuring within protein structural elements (e.g., α-helices/β-sheets), may affect stability or activity[10]. 
+From a biological perspective, SNPs within coding regions may be synonymous or nonsynonymous. Nonsynonymous substitutions within coding regions may alter amino acid sequence and potentially influence protein structure or function[10]. 
 
 Overall, this analysis demonstrates that combining long-read assembly, read-based variant calling and IGV visualization provides a robust framework for genome comparison. Integrating structural metrics with base level validation allows for more confident interpretation of genomic differences relative to a reference genome.
 
@@ -91,8 +91,13 @@ Because these variants fall within coding sequences, SNPs may be synonymous or n
 [5] Thrash A, Hoffmann F, Perkins A. *Toward a more holistic method of genome assembly assessment*. BMC Bioinformatics, 2020.\
 [6] Li H. *Minimap2: pairwise alignment for nucleotide sequences*. Bioinformatics, 2018.\
 [7] Thorvaldsdóttir H, Robinson JT, Mesirov JP. *Integrative Genomics Viewer (IGV): high-performance genomics data visualization*. Bioinformatics, 2013.\
+<<<<<<< HEAD
 [8] Wick RR, Judd LM, Holt KE. Performance of neural network basecalling tools for Oxford Nanopore sequencing. Genome Biology, 2019.       [9] Zheng Z, Li S, Su J, et al. Symphonizing pileup and full-alignment for deep learning–based long-read variant calling. Nature Computational Science, 2022.
 
 [10] Hu L, Cao G, Brown EW, Allard MW, Ma LM, Zhang G. Whole genome sequencing and protein structure analyses of target genes for the detection of Salmonella. Scientific Reports.2021
 
 [11] Martínez-Flores I, Pérez-Morales D, Sánchez-Pérez M, et al. *In silico clustering of Salmonella global gene expression data reveals novel genes co-regulated with the SPI-1 virulence genes through HilD*. Scientific Reports, 2016.
+=======
+[8] Wick RR, Judd LM, Holt KE. Performance of neural network basecalling tools for Oxford Nanopore sequencing. Genome Biology, 2019.                  
+[9] Zheng Z, Li S, Su J, et al. Symphonizing pileup and full-alignment for deep learning–based long-read variant calling. Nature Computational Science, 2022. 								[10] Hu L, Cao G, Brown EW, Allard MW, Ma LM, Zhang G. Whole genome sequencing and protein structure analyses of target genes for the detection of Salmonella. Scientific Reports, 2021.	[11] Martínez-Flores I, Pérez-Morales D, Sánchez-Pérez M, et al. *In silico clustering of Salmonella global gene expression data reveals novel genes co-regulated with the SPI-1 virulence genes through HilD*. Scientific Reports, 2016.
+>>>>>>> 21c9c62 (Minor edits  README)
