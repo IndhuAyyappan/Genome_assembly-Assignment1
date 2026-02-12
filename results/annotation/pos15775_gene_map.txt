@@ -1,0 +1,2 @@
+NC_003197.2	RefSeq	gene	15007	15961	.	+	.	ID=gene-STM0014;Dbxref=GeneID:1251532;Name=STM0014;gbkey=Gene;gene_biotype=protein_coding;locus_tag=STM0014
+NC_003197.2	RefSeq	CDS	15014	15961	.	+	0	ID=cds-NP_459019.1;Parent=gene-STM0014;Dbxref=GenBank:NP_459019.1,GeneID:1251532;Name=NP_459019.1;Note=similar to E. coli putative transcriptional regulator LYSR-type (AAC73704.1)%3B Blastp hit to AAC73704.1 (300 aa)%2C 25%25 identity in aa 8 - 296;gbkey=CDS;locus_tag=STM0014;product=putative LysR family transcriptional regulator;protein_id=NP_459019.1;transl_table=11

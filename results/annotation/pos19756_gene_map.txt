@@ -1,0 +1,2 @@
+NC_003197.2	RefSeq	gene	17860	19966	.	+	.	ID=gene-STM0018;Dbxref=GeneID:1251536;Name=STM0018;gbkey=Gene;gene_biotype=protein_coding;locus_tag=STM0018
+NC_003197.2	RefSeq	CDS	17867	19966	.	+	0	ID=cds-NP_459023.1;Parent=gene-STM0018;Dbxref=GenBank:NP_459023.1,GeneID:1251536;Name=NP_459023.1;gbkey=CDS;locus_tag=STM0018;product=putative exochitinase;protein_id=NP_459023.1;transl_table=11

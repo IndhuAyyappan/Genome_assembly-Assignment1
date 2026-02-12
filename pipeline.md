@@ -6,6 +6,7 @@ The assignment goal is to:
 2) Compare assembly to a reference genome (QUAST + assembly to ref alignment)  
 3) Call variants vs the reference genome (Clair3; read-based)  
 4) Visualize differences in IGV (BAM + VCF on reference coordinates)
+5) Map representative variants to genes using the reference RefSeq annotation (GFF) for functional context
 
 ### MAIN workflow used in Discussion 
 Raw ONT reads  
@@ -18,6 +19,7 @@ Raw ONT reads
 **minimap2 map-ont to reference**  
 **Clair3 variants vs reference**  
 **IGV** (reference + BAM + VCF)
+**Variant** --> **gene mapping(RefSeq GFF)** (for biological interpretation of representatibe SNP/ indel sites)
 
 Only these steps and outputs are used for the final biological interpretation.
 
@@ -34,6 +36,7 @@ All exploratory outputs are clearly separated in folder structure.
 ## Inputs
 - Raw ONT reads: `data/raw/SRR32410565.fastq`
 - Reference genome: `data/reference/GCF_000006945.2_ASM694v2_genomic.fna`
+- Reference annotation (GFF): `data/reference/GCF_000006945.2_ASM694v2_genomic.gff`
 
 ## Main output folders
 - QC: `results/qc/`
@@ -42,6 +45,7 @@ All exploratory outputs are clearly separated in folder structure.
 - QUAST: `results/quast/`
 - Polishing: `results/polishing/medaka_flye_hq/`
 - Variant calling: `results/variant_calling/`
+- Annotation/ gene mapping : `results/annotation/`
 
 
 ## 0) Raw read QC (exploratory)
@@ -259,4 +263,33 @@ I used 3 representative variants on NC_003197.2 for figures:
 Note:
 Clair3 generates per-contig intermediate VCFs in tmp/merge_output/ (merge_NC_003197.2.vcf) was used for contig-specific IGV screenshots. The final merged variant callset used for interpretation is merge_output.vcf.gz.
 
+## 8)Variant --> gene mapping using reference annotation (MAIN for interpretation)
+
+Purpose: To provide functional context by mapping selected variant positions to annotated genes in the RefSeq GFF.
+
+### 8.1 Download reference annotation (GFF)
+
+Saved as:
+	•	data/reference/GCF_000006945.2_ASM694v2_genomic.gff
+
+### 8.2 Query which gene overlaps a variant position
+
+mkdir -p results/annotation
+
+awk '$1=="NC_003197.2" && ($3=="gene" || $3=="CDS") && $4<=831 && $5>=831' \
+data/reference/GCF_000006945.2_ASM694v2_genomic.gff \
+> results/annotation/pos831_gene_map.txt
+
+awk '$1=="NC_003197.2" && ($3=="gene" || $3=="CDS") && $4<=15775 && $5>=15775' \
+data/reference/GCF_000006945.2_ASM694v2_genomic.gff \
+> results/annotation/pos15775_gene_map.txt
+
+awk '$1=="NC_003197.2" && ($3=="gene" || $3=="CDS") && $4<=19756 && $5>=19756' \
+data/reference/GCF_000006945.2_ASM694v2_genomic.gff \
+> results/annotation/pos19756_gene_map.txt
+
+Outputs:
+• results/annotation/pos831_gene_map.txt
+• results/annotation/pos15775_gene_map.txt
+• results/annotation/pos19756_gene_map.txt
 
