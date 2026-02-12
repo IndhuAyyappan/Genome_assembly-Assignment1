@@ -71,14 +71,15 @@ From a biological perspective, SNPs within coding regions may be synonymous or n
 
 Overall, this analysis demonstrates that combining long-read assembly, read-based variant calling and IGV visualization provides a robust framework for genome comparison. Integrating structural metrics with base level validation allows for more confident interpretation of genomic differences relative to a reference genome.
 
-### Variant to Gene Mapping Using Reference Annotation 
+### Variant to Gene Mapping Using Reference Annotation
 
 To provide functional context, representative variants were mapped to genes using the RefSeq annotation (GCF_000006945.2; GFF file from NCBI).
-	•	NC_003197.2:831 (SNP) occurs within thrA (STM0002), encoding aspartokinase I (threonine biosynthesis).
-	•	NC_003197.2:15775 (SNP) lies within STM0014, annotated as a LysR-type transcriptional regulator. LysR-family transcriptional regulators have been shown to control virulence associated gene networks in Salmonella, including SPI-1 regulatory pathways[11].
-	•	NC_003197.2:19756 (indel) lies within STM0018, annotated as a putative exochitinase.
 
-Because these variants fall within coding sequences, SNPs may be synonymous or nonsynonymous. The indels could introduce a frameshift, potentially altering the encoded protein.
+- **NC_003197.2:831 (SNP)** occurs within *thrA* (STM0002), encoding aspartokinase I (threonine biosynthesis).
+- **NC_003197.2:15775 (SNP)** lies within *STM0014*, annotated as a LysR-type transcriptional regulator. LysR-family regulators control virulence-associated gene networks in *Salmonella*, including SPI-1 pathways [11].
+- **NC_003197.2:19756 (indel)** lies within *STM0018*, annotated as a putative exochitinase based on homology based gene prediction.
+
+Because these variants fall within coding sequences, SNPs may be synonymous or nonsynonymous. Indels could introduce a frameshift, potentially altering the encoded protein.
 
 
 ## References
@@ -93,6 +94,4 @@ Because these variants fall within coding sequences, SNPs may be synonymous or n
 [8] Wick RR, Judd LM, Holt KE. Performance of neural network basecalling tools for Oxford Nanopore sequencing. Genome Biology, 2019.                  
 [9] Zheng Z, Li S, Su J, et al. Symphonizing pileup and full-alignment for deep learning–based long-read variant calling. Nature Computational Science, 2022. 
 [10] Hu L, Cao G, Brown EW, Allard MW, Ma LM, Zhang G. Whole genome sequencing and protein structure analyses of target genes for the detection of Salmonella. Scientific Reports.2021
-[11] Martínez-Flores I, Pérez-Morales D, Sánchez-Pérez M, et al. 
-In silico clustering of Salmonella global gene expression data reveals novel genes co-regulated with the SPI-1 virulence genes through HilD. 
-Scientific Reports. 2016.
+[11] Martínez-Flores I, Pérez-Morales D, Sánchez-Pérez M, et al. *In silico clustering of Salmonella global gene expression data reveals novel genes co-regulated with the SPI-1 virulence genes through HilD*. Scientific Reports, 2016.
